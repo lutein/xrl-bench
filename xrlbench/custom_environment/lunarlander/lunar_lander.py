@@ -46,7 +46,8 @@ class LunarLander:
         Load model for the reinforcement learning agent.
         """
         try:
-            self.model.load_state_dict(torch.load(os.path.join(".", "model", "LunarLander.pth")))
+            model_path = r"E:\可解释\xrl-bench\model\LunarLander.pth"
+            self.model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
         except:
             print("This model is not existing, please train it.")
 

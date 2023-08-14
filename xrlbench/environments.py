@@ -5,7 +5,7 @@ import xrlbench.custom_environment
 valid_environments = {
     "lunarLander": xrlbench.custom_environment.LunarLander,
     "cartPole": xrlbench.custom_environment.CartPole,
-    "flappyBird": xrlbench.custom_environment.FlappyBird
+    # "flappyBird": xrlbench.custom_environment.FlappyBird
 }
 
 
