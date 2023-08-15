@@ -23,7 +23,7 @@ if __name__ == "__main__":
     # TarbularSHAP explain in LunarLander environment
     environment = Environment(environment_name="lunarLander")
     # environment.train_model()
-    df = environment.get_dataset(generate=False)
+    df = environment.get_dataset(generate=False, data_format="csv")
     df_sample = df.sample(n=5000, random_state=42)
     action_sample = df_sample['action']
     state_sample = df_sample.drop(['action', 'reward'], axis=1)

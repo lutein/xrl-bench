@@ -90,7 +90,7 @@ class CartPole:
         torch.save(self.agent.qnetwork_local.state_dict(), os.path.join(".", "model", "CartPole.pth"))
         return self.agent.qnetwork_local
 
-    def get_dataset(self, generate=False, n_episodes=500, max_t=1000):
+    def get_dataset(self, generate=False, n_episodes=500, max_t=1000, data_format="csv"):
         """
         Get the dataset for the Cart Pole environment.
 
